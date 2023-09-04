@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <navbar class="flex justify-between items-center px-20 h-16">
+    <!-- Align the logo to the left -->
+    <div class="logo flex-none">
+      <img src="./logo.svg" alt="" srcset="" />
+    </div>
+
+    <!-- Center align the nav-items -->
+    <div class="nav-items text-center w-2/5 me-96">
+      <ul class="flex justify-around">
+        <li>Home</li>
+        <li>Discussion</li>
+        <li>Knowledge Hub</li>
+        <li>Join Us</li>
+        <li>About Us</li>
+      </ul>
+    </div>
+  </navbar>
+
+  <section class="hero-section">
+    <div class="hero-banner h-screen">
+      <div class="hero-bg">
+        <div class="banner-text pt-[125px]">
+          Shaping Global Narratives to
+          <span class="text-underline">Deliver on Impact Outcomes</span>
+        </div>
+        <div class="banner-para w-3/5 text-center mx-auto pt-[108px] text-2xl">
+          The Community of Practice is a platform for ecosystem actors to
+          engage, learn and innovate solutions and build evidence that impact
+          financial health and wellbeing, particularly of low and moderate
+          income groups.
+        </div>
+        <div class="banner-buttons flex justify-center pt-[49px]">
+          <button class="rounded-lg m-4 text-white">
+            Submit Your Content
+          </button>
+          <button class="bg-white rounded-lg m-4">Post Your Blog</button>
+        </div>
+        <div class="banner-cards flex justify-evenly mt-[70px] w-full">
+          <div class="card bg-white w-[300px] h-[170px] px-[47px] py-[38px]">
+            <p class="text-xl">Research and Insights Board</p>
+            <p class="text-md text">your research on Financial Health</p>
+            <button class="px-4 py-1 rounded-lg mt-4">More</button>
+          </div>
+          <div class="card bg-white w-[300px] h-[170px] px-[47px] py-[38px]">
+            <p class="text-xl">Research and Insights Board</p>
+            <p class="text-md text">your research on Financial Health</p>
+            <button class="px-4 py-1 rounded-lg mt-4">More</button>
+          </div>
+          <div class="card bg-white w-[300px] h-[170px] px-[47px] py-[38px]">
+            <p class="text-xl">Research and Insights Board</p>
+            <p class="text-md text">your research on Financial Health</p>
+            <button class="px-4 py-1 rounded-lg mt-4">More</button>
+          </div>
+          <div class="card bg-white w-[300px] h-[170px] px-[47px] py-[38px]">
+            <p class="text-xl">Research and Insights Board</p>
+            <p class="text-md text">your research on Financial Health</p>
+            <button class="px-4 py-1 rounded-lg mt-4">More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-section flex justify-center mt-20 flex-col h-screen">
+    <div class="heading flex">
+      <img src="lines-left.svg" alt="" srcset="" />
+      <h1 class="text-3xl mx-[43px]">Latest</h1>
+      <img src="lines-right.svg" alt="" srcset="" />
+    </div>
+    <div class="latest-cards swiper">
+      <div class="swiper-wrapper">
+        <div class="Lcard swiper-slide bg-white">
+          <div class="image-container">
+            <img src="./img/digital-financial-inclusion.png" alt="" srcset="" />
+          </div>
+          <p class="text-md p-4">
+            Igniting SDG Progress Through Digital Financial Inclusion
+          </p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+  </script>
+</body>
+
+</html>
