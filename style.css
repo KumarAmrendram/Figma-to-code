@@ -11,11 +11,9 @@ navbar {
 }
 
 .hero-bg {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(52, 151, 136, 0) 0%,
-      rgba(50, 137, 124, 0.62) 100%
-    ),
+      rgba(50, 137, 124, 0.62) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.29) 100%),
     url("hero-bg copy.jpg"), lightgray 0px 0px / 100% 109.651% no-repeat;
   max-height: 90vh;
@@ -35,6 +33,7 @@ navbar {
 .banner-text .text-underline {
   border-bottom: 10px solid #71e5d4;
 }
+
 .banner-para {
   color: #fff;
   text-align: center;
@@ -71,7 +70,8 @@ navbar {
   font-size: 13.04px;
   font-style: normal;
   font-weight: 300;
-  line-height: 22.09px; /* 169.403% */
+  line-height: 22.09px;
+  /* 169.403% */
 }
 
 /* second section */
@@ -98,7 +98,7 @@ navbar {
 .Lcard .image-container {
   width: inherit;
   height: 235px !important;
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
 }
 
@@ -114,5 +114,43 @@ navbar {
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26.4px; /* 138.947% */
+  line-height: 26.4px;
+  /* 138.947% */
+}
+
+/* featured-insight */
+
+.featured-insight {
+  background-color: #F1FFFD;
+  height: 100vh;
+}
+
+.outer-circle {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background-color: #bce9e2;
+}
+
+.middle-circle {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #8ce7da;
+}
+
+.inner-circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #53e0cb;
+}
+
+.featured-insight .text {
+  color: #000;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 80.178px;
+  /* 138.947% */
 }
